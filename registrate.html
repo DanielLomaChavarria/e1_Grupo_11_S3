@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Play</title>
+    <!-- Logo -->
+    <link rel="icon" href="img/logo.jpeg">
+    <!-- foont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/index.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                    <a class="nav-link" href="noticias.html">Noticias<a>
+                    <a class="nav-link" href="sesion.html">Iniciar-Sesion<a></a>
+                  <a class="nav-link " href="registrate.html" tabindex="-1" aria-disabled="true">Registrate</a>
+                </div>
+              </div>
+            </div>s
+          </nav>
+    </header>
+    <br>
+    
+    <div class="container">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+              <label for="validationCustom01" class="form-label">Nombres</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Ingrese su nombre" required>
+              <div class="valid-feedback">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label">Apellidos</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Ingrese sus apellidos" required>
+              <div class="valid-feedback">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustomUsername" class="form-label">Correo</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="email" class="form-control" id="validationCustomUsername" placeholder="Ingrese su correo electrónico" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Por favor, ingrese un correo electrónico válido.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Usuario</label>
+              <input type="text" class="form-control" id="validationCustom03" placeholder="Ingrese su nombre de usuario" required>
+              <div class="invalid-feedback">
+                Por favor, ingrese un nombre de usuario.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustomPassword" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="validationCustomPassword" placeholder="Ingrese su contraseña" pattern="^(?=.*[0-9])(?=.*[A-Z]).{8,12}$" required>
+              <div class="invalid-feedback">
+                La contraseña debe contener al menos 8 caracteres, una letra mayúscula y un número.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustomConfirmPassword" class="form-label">Confirmar Contraseña</label>
+              <input type="password" class="form-control" id="validationCustomConfirmPassword" placeholder="Repita su contraseña" required>
+              <div class="invalid-feedback">
+                Las contraseñas no coinciden.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Acepto los términos y condiciones
+                </label>
+                <div class="invalid-feedback">
+                  Debes aceptar los términos y condiciones antes de enviar el formulario.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Registrarse</button>
+            </div>
+          </form>
+    </div>
+
+    
+    <!-- Validacion JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="validacion.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
